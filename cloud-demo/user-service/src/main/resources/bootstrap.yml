@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: userservice
+  profiles:
+    active: dev # 开发环境，这里是dev（也可以是prod或者test）
+  cloud:
+    nacos:
+      server-addr: localhost:8848 # nacos地址
+      config:
+        file-extension: yaml # 文件后缀名  实现微服务获取nacos中的配置信息
+
